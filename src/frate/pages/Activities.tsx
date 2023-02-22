@@ -1,0 +1,12 @@
+import React from 'react'
+import { AppLayout } from '../layouts/AppLayout';
+
+export const Activities = () => {
+  return (
+    <AppLayout>
+    <h1 className="text-3xl font-bold px-4">
+        Activities
+    </h1>
+</AppLayout>
+  )
+}

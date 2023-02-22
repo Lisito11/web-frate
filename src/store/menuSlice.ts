@@ -10,7 +10,8 @@ export interface MenuSlice {
 
 type MenuItem = {
     name: string,
-    link: string
+    link: string,
+    selected: Boolean
 }
 
 const FADE_IN = 'fade-in';
@@ -20,27 +21,37 @@ const HIDDEN = 'invisible'
 const MENU_ITEMS = [
     {
         name: 'Inicio',
-        link: '/'
+        link: '/',
+        selected: false
     },
     {
         name: 'Historia',
-        link: '/'
+        link: '/historia-fml',
+        selected: false
     },
     {
         name: 'Comunidades',
-        link: '/'
+        link: '/comunidades',
+        selected: false
+        
     },
     {
         name: 'Equipos',
-        link: '/'
+        link: '/equipos',
+        selected: false
+
     },
     {
         name: 'Actividades',
-        link: '/'
+        link: '/actividades',
+        selected: false
+
     },
     {
         name: 'Contacto',
-        link: '/'
+        link: '/contacto',
+        selected: false
+
     },
 ]
 

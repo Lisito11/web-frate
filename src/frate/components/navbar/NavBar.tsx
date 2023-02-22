@@ -2,6 +2,7 @@ import { Divider } from "./Divider";
 import { DonationButton } from "./DonationButton";
 import { MenuMobile } from "./MenuMobile";
 import { useFrateStore } from "../../../store/useStore";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const { changeMenu, openMenu, menuList } = useFrateStore((state) => state);
@@ -55,15 +56,15 @@ export const NavBar = () => {
         </div>
 
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-4">
-          {menuList.map(({ name }) => (
+          {menuList.map(({ name, link }) => (
             <>
               <li>
-                <a
+                <Link
                   className="text-sm text-gray-400 hover:text-gray-500"
-                  href="#"
+                  to={link}
                 >
                   {name}
-                </a>
+                </Link>
               </li>
 
               {name != 'Contacto' ? <Divider /> : ""}
