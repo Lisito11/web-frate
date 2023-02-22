@@ -12,7 +12,7 @@ export const NavBar = () => {
         {/* LOGO */}
         <div className="flex justify-between items-center">
           <a href="#">
-            <img src="/assets/logo.png" alt="" className="h-16 sm:h-20" />
+            <img src="/src/assets/logo.png" alt="" className="h-16 sm:h-20" />
           </a>
           <a className="pt-3 px-3" href="#">
             <span className="text-3xl sm:text-4xl font-bold font-sans text-blue-600">
