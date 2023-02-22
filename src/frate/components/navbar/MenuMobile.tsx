@@ -1,9 +1,10 @@
 import { DonationButton } from './DonationButton';
 import { useFrateStore } from '../../../store/useStore';
+import { Link } from 'react-router-dom';
 
 export const MenuMobile = () => {
 
-  const {changeMenu, menu, closeMenu, menuList} = useFrateStore((state) => state);
+  const {changeMenu, menu, closeMenu, menuList, updateMenuItem} = useFrateStore((state) => state);
 
   return (
     <div className={`navbar-menu relative z-50 ${menu}`} id="drawer">
@@ -41,15 +42,19 @@ export const MenuMobile = () => {
         <div>
           <ul>
 
-          {menuList.map(({ name }) => (
+          {menuList.map(({ name, link, selected }) => (
             <>
               <li className="mb-1">
-              <a
-                className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                href="#"
+              <Link
+                onClick={() => {
+                  updateMenuItem({name, link, selected: 'text-blue-600'})
+                  changeMenu(closeMenu)
+                }}
+                className={`block p-4 text-sm font-semibold ${selected} hover:bg-blue-50 hover:text-blue-600 rounded`}
+                to={link}
               >
                 {name}
-              </a>
+              </Link>
             </li>
             </>
           ))}

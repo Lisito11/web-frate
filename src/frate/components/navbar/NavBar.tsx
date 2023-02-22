@@ -5,7 +5,7 @@ import { useFrateStore } from "../../../store/useStore";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-  const { changeMenu, openMenu, menuList } = useFrateStore((state) => state);
+  const { changeMenu, openMenu, menuList, updateMenuItem, closeMenu, menu } = useFrateStore((state) => state);
 
   return (
     <div className="">
@@ -56,11 +56,12 @@ export const NavBar = () => {
         </div>
 
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-4">
-          {menuList.map(({ name, link }) => (
+          {menuList.map(({ name, link, selected }) => (
             <>
               <li>
                 <Link
-                  className="text-sm text-gray-400 hover:text-gray-500"
+                  onClick={() => updateMenuItem({name, link, selected: 'text-blue-600'})}
+                  className={`text-sm ${selected} hover:text-gray-500`}
                   to={link}
                 >
                   {name}

@@ -6,59 +6,71 @@ export interface MenuSlice {
     closeMenu: string,
     menuList: MenuItem[]
     changeMenu (open: string): void
+    updateMenuItem (open: MenuItem): void
 }
 
 type MenuItem = {
     name: string,
     link: string,
-    selected: Boolean
+    selected: string
 }
 
 const FADE_IN = 'fade-in';
 const FADE_OUT = 'fade-out';
 const HIDDEN = 'invisible'
 
-const MENU_ITEMS = [
+const menuItems = [
     {
         name: 'Inicio',
         link: '/',
-        selected: false
+        selected: 'text-blue-600'
     },
     {
         name: 'Historia',
         link: '/historia-fml',
-        selected: false
+        selected: 'text-gray-400'
     },
     {
         name: 'Comunidades',
         link: '/comunidades',
-        selected: false
+        selected: 'text-gray-400'
         
     },
     {
         name: 'Equipos',
         link: '/equipos',
-        selected: false
+        selected: 'text-gray-400'
 
     },
     {
         name: 'Actividades',
         link: '/actividades',
-        selected: false
+        selected: 'text-gray-400'
 
     },
     {
         name: 'Contacto',
         link: '/contacto',
-        selected: false
+        selected: 'text-gray-400'
 
     },
 ]
 
 export const createMenuSlice: StateCreator<MenuSlice> = (set) => ({
     menu: HIDDEN,
-    menuList: MENU_ITEMS,
+    menuList: menuItems,
     openMenu: FADE_IN,
     closeMenu: FADE_OUT,
-    changeMenu: (open) => set(() => ({ menu: open }))
+    changeMenu: (open) => set(() => ({ menu: open })),
+    updateMenuItem: (selectedItem) => set((state) => ({
+        menuList : state.menuList.map( (item) => {
+        if (item.name === selectedItem.name) {
+            return selectedItem
+        }
+        item.selected = 'text-gray-400'
+        return item;
+        }),
+        
+    }
+    )),
 })
