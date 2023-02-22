@@ -6,7 +6,7 @@ export interface MenuSlice {
     closeMenu: string,
     menuList: MenuItem[]
     changeMenu (open: string): void
-    updateMenuItem (open: MenuItem): void
+    updateMenuItem (item: string): void
 }
 
 type MenuItem = {
@@ -64,8 +64,13 @@ export const createMenuSlice: StateCreator<MenuSlice> = (set) => ({
     changeMenu: (open) => set(() => ({ menu: open })),
     updateMenuItem: (selectedItem) => set((state) => ({
         menuList : state.menuList.map( (item) => {
-        if (item.name === selectedItem.name) {
-            return selectedItem
+            
+            
+        if (item.link === selectedItem) {
+            console.log(item.link);
+            console.log(selectedItem);
+            item.selected = "text-blue-600"
+            return item;
         }
         item.selected = 'text-gray-400'
         return item;

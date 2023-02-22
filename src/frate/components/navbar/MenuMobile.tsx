@@ -47,7 +47,7 @@ export const MenuMobile = () => {
               <li className="mb-1">
               <Link
                 onClick={() => {
-                  updateMenuItem({name, link, selected: 'text-blue-600'})
+                  updateMenuItem(link)
                   changeMenu(closeMenu)
                 }}
                 className={`block p-4 text-sm font-semibold ${selected} hover:bg-blue-50 hover:text-blue-600 rounded`}

@@ -2,11 +2,20 @@ import { Divider } from "./Divider";
 import { DonationButton } from "./DonationButton";
 import { MenuMobile } from "./MenuMobile";
 import { useFrateStore } from "../../../store/useStore";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
 
 export const NavBar = () => {
-  const { changeMenu, openMenu, menuList, updateMenuItem, closeMenu, menu } = useFrateStore((state) => state);
+  const { changeMenu, openMenu, menuList, updateMenuItem } = useFrateStore((state) => state);
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    const link = pathname.split('/')[1] == '' ? '/' : `/${pathname.split('/')[1]}`;    
+    
+    updateMenuItem(link);
+  }, [pathname])
+  
+  
   return (
     <div className="">
       <nav className="relative px-6 py-3 flex justify-between items-center bg-white">
@@ -60,7 +69,7 @@ export const NavBar = () => {
             <>
               <li>
                 <Link
-                  onClick={() => updateMenuItem({name, link, selected: 'text-blue-600'})}
+                  onClick={() => updateMenuItem(link)}
                   className={`text-sm ${selected} hover:text-gray-500`}
                   to={link}
                 >
