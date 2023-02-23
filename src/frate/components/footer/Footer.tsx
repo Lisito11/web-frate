@@ -27,21 +27,21 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-wrap justify-center mt-4 space-x-6">
-            <img src="/images/logo_salle.png" className='h-10 sm:h-16'/>
-            <img src="/images/logo.png" className='h-10 sm:h-16'/>
-            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" className='h-10 sm:h-16' alt="PayPal Logo"/>
+            <img src="/images/logo_salle.png" className='h-10'/>
+            <img src="/images/logo.png" className='h-10'/>
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" className='h-10' alt="PayPal Logo"/>
             <DonationButton styles={"hidden lg:flex justify-center items-center py-2 px-4 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200 cursor-pointer"}/>        
         </div>
 
 
-        <p className="mt-4 text-base leading-6 text-center text-gray-400">
+        <p className="mt-4 text-sm leading-6 text-center text-gray-400">
             © 2023 Fraternidad Misionera Lasallista 
             <span> | </span>
-            <a className="mt-4 text-base leading-6 text-center text-gray-400 hover:text-gray-500" href='#'>
+            <a className="mt-4 text-sm leading-6 text-center text-gray-400 hover:text-gray-500" href='#'>
                     Politicas de privacidad
             </a>
             <span> | </span> 
-            <a className="mt-4 text-base leading-6 text-center text-gray-400 hover:text-gray-500" href='#'>
+            <a className="mt-4 text-sm leading-6 text-center text-gray-400 hover:text-gray-500" href='#'>
                    Términos de uso
             </a>
             

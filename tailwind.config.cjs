@@ -7,8 +7,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Comfortaa']
+        sans: ['Comfortaa'],
+        temp: ['Courgette']
       },
+
+      backgroundImage: {
+        'main': "url('/images/background-mobile.jpg')",
+      }
     },
   },
   plugins: [],
