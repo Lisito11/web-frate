@@ -1,3 +1,4 @@
+import { Footer } from '../components/footer/Footer';
 import { NavBar } from '../components/navbar/NavBar';
 
 type Props = {
@@ -13,6 +14,8 @@ export const AppLayout = ({children}: Props) => {
         <main className="">
             { children } 
         </main>
+
+        <Footer/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { createMenuSlice, MenuSlice } from './menuSlice'
+import { createMenuSlice, MenuSlice } from './createMenuSlice';
 
 
 export const useFrateStore = create<MenuSlice>()((...a) => ({
