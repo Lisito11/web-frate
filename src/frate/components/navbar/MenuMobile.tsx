@@ -64,7 +64,7 @@ export const MenuMobile = () => {
         <div className="mt-auto">
           <DonationButton
             styles={
-              "flex justify-center items-center py-2 px-4 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+              "flex justify-center items-center py-2 px-4 text-sm text-white font-bold rounded-xl transition duration-200"
             }
           />
           <p className="my-4 text-xs text-center text-gray-400">

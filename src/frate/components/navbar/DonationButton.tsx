@@ -6,7 +6,7 @@ type Props = {
 }
 export const DonationButton = ({styles} : Props) => {
   return (
-    <div className={styles}>
+    <div className={`${styles} bg-gradient-to-r from-cyan-500 to-blue-500` }>
     <a href="#">Donar Ahora</a>
     <span className="px-1">
       <svg

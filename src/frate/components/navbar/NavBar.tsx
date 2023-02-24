@@ -85,7 +85,7 @@ export const NavBar = () => {
 
         <DonationButton
           styles={
-            "hidden lg:flex justify-center items-center py-2 px-4 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+            "hidden lg:flex justify-center items-center py-2 px-4 text-sm text-white font-bold rounded-xl transition duration-200"
           }
         />
       </nav>
