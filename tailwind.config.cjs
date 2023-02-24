@@ -8,11 +8,12 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Comfortaa'],
-        temp: ['Satisfy']
+        temp: ['Satisfy'],
+        roboto: ['Roboto']
       },
 
       backgroundImage: {
-        'main-mobile': "url('/images/bg-mobile.jpg')",
+        'main-mobile': "url('/images/background-mobile.webp')",
       }
     },
   },
