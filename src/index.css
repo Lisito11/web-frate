@@ -30,16 +30,3 @@ body{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-.filter {
-  -webkit-backdrop-filter: opacity(50);
-  backdrop-filter: opacity(50);
-}
-
-.stroke-title-cursive{
-  -webkit-text-stroke: 0.4px black;
-}
-
-.stroke-title{
-  -webkit-text-stroke: 0.6px black;
-}

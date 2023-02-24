@@ -16,7 +16,10 @@ export const DonationForm = () => {
   const [selected, setSelected] = useState(currencies[0]);
 
   return (
-    <div className="pb-6">
+    <div className="pb-6 h-max">
+
+
+
       <div className="inline-flex items-center self-start">
         <h2 className="font-black text-xl text-gray-900 p-3">
           Donación para la FML
@@ -34,8 +37,8 @@ export const DonationForm = () => {
           />
         </svg>
       </div>
-      <div className="flex justify-center">
-        <div>
+      <div className="flex flex-col justify-center">
+        <div className="p-4">
           <form
             id="login_form"
             action="api_login"
@@ -177,6 +180,25 @@ export const DonationForm = () => {
             </button>
           </form>
         </div>
+
+        <div className="flex flex-col justify-center items-center mt-2">
+          <div className="flex flex-col items-center">
+            <img className="h-20 w-20" src="/images/save-children.png" alt="" />
+            <h4 className="font-black">+1500</h4>
+            <p>Niños y Jovenes</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img className="h-24 w-24" src="/images/heart-cross.png" alt="" />
+            <h4 className="font-black">+50</h4>
+            <p>Misiones</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img className="h-24 w-24" src="/images/cross.png" alt="" />
+            <h4 className="font-black">+200</h4>
+            <p>Misioneros</p>
+          </div>
+          </div>
+        
       </div>
     </div>
   );
