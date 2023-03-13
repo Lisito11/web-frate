@@ -5,6 +5,7 @@ import { WhatIsFrate } from "../components/home/WhatIsFrate";
 import { Activities } from "../components/home/Activities";
 import { Teams } from "../components/home/Teams";
 import { Fraternizate } from "../components/home/Fraternizate";
+import { ContactUs } from '../components/home/ContactUs';
 
 export const HomePage = () => {
   return (
@@ -63,12 +64,9 @@ export const HomePage = () => {
         <Teams />
       </div>
 
-      <Fraternizate/>
+      <Fraternizate />
 
-      <div className="h-max">
-        <h2 className="text-xl font-black p-3">¿Quieres ser parte?</h2>
-      </div>
-      
+      <ContactUs/>
     </AppLayout>
   );
 };
