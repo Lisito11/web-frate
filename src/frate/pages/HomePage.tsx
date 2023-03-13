@@ -2,8 +2,9 @@ import { DonationForm } from "../components/home/DonationForm";
 import { AppLayout } from "../layouts/AppLayout";
 import { Comunities } from "../components/home/Comunities";
 import { WhatIsFrate } from "../components/home/WhatIsFrate";
-import { Activities } from '../components/home/Activities';
+import { Activities } from "../components/home/Activities";
 import { Teams } from "../components/home/Teams";
+import { Fraternizate } from "../components/home/Fraternizate";
 
 export const HomePage = () => {
   return (
@@ -35,7 +36,7 @@ export const HomePage = () => {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-16 w-16 inline  text-red-600 animate-pulse"
+                  className="h-16 w-16 inline  text-red-600 hover:animate-pulse"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -58,19 +59,16 @@ export const HomePage = () => {
       <Comunities />
 
       <div className="h-max p-3">
-        <Activities/>
-       
-       <Teams/>
-
+        <Activities />
+        <Teams />
       </div>
 
-      <div className="h-max">
-        <h2 className="text-xl font-black p-3">Nuestro fraternizate</h2>
-      </div>
+      <Fraternizate/>
 
       <div className="h-max">
         <h2 className="text-xl font-black p-3">¿Quieres ser parte?</h2>
       </div>
+      
     </AppLayout>
   );
 };

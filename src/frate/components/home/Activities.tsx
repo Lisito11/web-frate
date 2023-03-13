@@ -2,9 +2,12 @@
 export const Activities = () => {
   return (
     <div className="mb-3">
-        <h2 className="text-xl font-black">Actividades</h2>
+        <div className="flex  justify-center items-center">
+      <h2 className="p-3 font-roboto uppercase text-blue-500 text-3xl">Actividades</h2>
+
+      </div>
         <div className="py-3 ">
-          <div className="relative flex items-end overflow-hidden rounded-md">
+          <div className="relative flex items-end overflow-hidden shadow-lg rounded-md">
             <img src={`/images/activities.jpg`} />
           </div>
           <div className="bg-blue-500 bg-opacity-10 p-3 rounded-md leading-6 mt-5">

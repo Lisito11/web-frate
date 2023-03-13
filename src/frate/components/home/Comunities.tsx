@@ -54,7 +54,10 @@ export const Comunities = () => {
 
   return (
     <div className="h-max bg-green-300 pb-6 bg-opacity-20">
-      <h2 className="text-xl font-black p-3">Comunidades</h2>
+      <div className="flex  justify-center items-center mt-3">
+      <h2 className="p-3 font-roboto uppercase text-green-500 text-3xl">Comunidades</h2>
+
+      </div>
 
       <div className="flex flex-col justify-center items-center space-y-5 mx-6 text-white ">
         {comunities.map(({ name, place, img }) => (
