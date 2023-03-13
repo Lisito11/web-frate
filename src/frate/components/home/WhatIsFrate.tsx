@@ -2,12 +2,12 @@
 export const WhatIsFrate = () => {
   return (
     <div className="bg-red-300 h-screen bg-what-is-fml-mobile bg-no-repeat bg-center bg-cover max-w  ">
-    <div className="bg-black h-screen bg-opacity-50 flex flex-col justify-end items-center">
+    <div className="bg-black h-screen bg-opacity-50 flex flex-col justify-center items-center">
       <h2 className="p-3 font-roboto uppercase text-red-500 text-3xl">¿Qué es la FML?</h2>
       
       <div className="px-3 pb-6">
         
-        <div className="bg-red-700 text-white p-3 rounded-md  leading-6">
+        <div className="bg-black bg-opacity-50 text-white p-3 rounded-md  leading-6">
             <p className="py-3">
               La <b>Fraternidad Misionera Lasallista</b> es un grupo de jovenes lasallista en su mayoría con un mismo objetivo común,
               <b> llevar el amor de Dios a cada corazón.</b> 

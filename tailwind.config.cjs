@@ -14,7 +14,8 @@ module.exports = {
 
       backgroundImage: {
         'main-mobile': "url('/images/background-mobile.webp')",
-        'what-is-fml-mobile': "url('/images/what-is-fml.jpg')"
+        'what-is-fml-mobile': "url('/images/what-is-fml.jpg')",
+        'communities-mobile': "url('/images/communities.jpg')",
       }
     },
   },

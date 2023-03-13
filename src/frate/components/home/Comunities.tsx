@@ -1,103 +1,77 @@
-import React from 'react'
+import React from "react";
 
 export const Comunities = () => {
-
   const comunities = [
     {
-        name: 'Arroyo Dulce',
-        place: 'Barahona',
-        link: '/comunities'
+      name: "Arroyo Dulce",
+      place: "Barahona",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Los Cocos',
-        place: 'Barahona',
-        link: '/comunities'
+      name: "Los Cocos",
+      place: "Barahona",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Najayo',
-        place: 'Baní',
-        link: '/comunities'
+      name: "Najayo",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'El Corte',
-        place: 'Baní',
-        link: '/comunities'
+      name: "El Corte",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Los Roche',
-        place: 'Baní',
-        link: '/comunities'
+      name: "Los Roche",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Gualey',
-        place: 'Baní',
-        link: '/comunities'
+      name: "Gualey",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Juan de Sena',
-        place: 'Baní',
-        link: '/comunities'
+      name: "Juan de Sena",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
     {
-        name: 'Las Barias',
-        place: 'Baní',
-        link: '/comunities'
+      name: "Las Barias",
+      place: "Baní",
+      img: "c1.jpg",
+      link: "/comunities",
     },
-   
-  ]
-
-
+  ];
 
   return (
-    <div className="h-max bg-green-300 pb-6">
-    <h2 className="text-xl font-black p-3">Comunidades</h2>
+    <div className="h-max bg-green-300 pb-6 bg-opacity-20">
+      <h2 className="text-xl font-black p-3">Comunidades</h2>
 
-    <div className="flex flex-col justify-center items-center space-y-5 mx-6 text-white">
+      <div className="flex flex-col justify-center items-center space-y-5 mx-6 text-white ">
+        {comunities.map(({ name, place, img }) => (
+          <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+            <a href="#">
+              <div className="relative flex items-end overflow-hidden rounded-xl">
+                <img src={`/images/communities/${img}`} alt="Hotel Photo" />
+              </div>
 
-   
-
-    {comunities.map(({name, place}) => (
-
-<div className="flex flex-col justify-center items-center w-full bg-green-700 rounded-md shadow-xl">
-<div className="flex justify-between w-full p-2 ">
-  <div>
-    <div className="flex items-center text-xs px-3 py-1 bg-blue-200 text-blue-800 rounded-full font-black">
-      {place}
+              <div className="mt-1 p-2">
+                <h2 className="text-slate-700">{name}</h2>
+                <p className="mt-1 text-sm text-slate-400">{place}</p>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
     </div>
-  </div>
-</div>
-
-<div className='flex flex-col justify-center items-center'>
-  <div className="font-bold text-2xl pt-6">{name}</div>
-  <div className='pb-6'>
-    <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-20 w-20 inline  text-red-600"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clip-rule="evenodd"
-            />
-          </svg>
-    </div>
-</div>
-</div>
-
-
-
-
-    ))}
-
-
-
-    </div>
-
-  
-    
-
-  </div>
-  )
-}
+  );
+};

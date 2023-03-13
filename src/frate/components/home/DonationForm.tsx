@@ -181,23 +181,29 @@ export const DonationForm = () => {
           </form>
         </div>
 
-        <div className="flex flex-col justify-center items-center mt-2">
+        <div className="flex flex-col justify-center items-center mt-2 gap-8">
+          <div className="flex flex-row gap-11">
+           
+            <div className="flex flex-col items-center">
+              <img className="h-20 w-20" src="/images/heart-cross.png" alt="" />
+              <h4 className="font-black">+50</h4>
+              <p>Misiones</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img className="h-20 w-20" src="/images/cross.png" alt="" />
+              <h4 className="font-black">+200</h4>
+              <p>Misioneros</p>
+            </div>
+
+          </div>
+          
           <div className="flex flex-col items-center">
-            <img className="h-20 w-20" src="/images/community.png" alt="" />
-            <h4 className="font-black">+1500</h4>
-            <p>Niños y Jovenes</p>
+              <img className="h-20 w-20" src="/images/community.png" alt="" />
+              <h4 className="font-black">+1500</h4>
+              <p>Niños y Jovenes</p>
           </div>
-          <div className="flex flex-col items-center">
-            <img className="h-24 w-24" src="/images/heart-cross.png" alt="" />
-            <h4 className="font-black">+50</h4>
-            <p>Misiones</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img className="h-24 w-24" src="/images/cross.png" alt="" />
-            <h4 className="font-black">+200</h4>
-            <p>Misioneros</p>
-          </div>
-          </div>
+         
+        </div>
         
       </div>
     </div>
