@@ -7,13 +7,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Comfortaa'],
-        temp: ['Satisfy'],
-        roboto: ['Roboto']
+        sans: ['Comfortaa','sans-serif'],
+        temp: ['Nada Qonita', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif']
       },
 
       backgroundImage: {
         'main-mobile': "url('/images/background-mobile.webp')",
+        'what-is-fml-mobile': "url('/images/what-is-fml.jpg')"
       }
     },
   },

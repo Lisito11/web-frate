@@ -11,6 +11,22 @@
 @tailwind utilities;
 @tailwind screens;
 
+
+
+
+@font-face {
+    font-family: "Nada Qonita";
+    src: url("/src/assets/fonts/nada_qonita.otf");
+}
+
+
+
+
+
+
+
+
+
 body{
   background-color: aliceblue;
 }

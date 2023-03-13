@@ -183,7 +183,7 @@ export const DonationForm = () => {
 
         <div className="flex flex-col justify-center items-center mt-2">
           <div className="flex flex-col items-center">
-            <img className="h-20 w-20" src="/images/save-children.png" alt="" />
+            <img className="h-20 w-20" src="/images/community.png" alt="" />
             <h4 className="font-black">+1500</h4>
             <p>Niños y Jovenes</p>
           </div>
