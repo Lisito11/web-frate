@@ -1,7 +1,9 @@
 import { DonationForm } from "../components/home/DonationForm";
 import { AppLayout } from "../layouts/AppLayout";
-import { Comunities } from '../components/home/Comunities';
+import { Comunities } from "../components/home/Comunities";
 import { WhatIsFrate } from "../components/home/WhatIsFrate";
+import { Activities } from '../components/home/Activities';
+import { Teams } from "../components/home/Teams";
 
 export const HomePage = () => {
   return (
@@ -49,15 +51,17 @@ export const HomePage = () => {
         </div>
       </div>
 
-   
       <DonationForm />
 
-      <WhatIsFrate/>
+      <WhatIsFrate />
 
-      <Comunities/>
+      <Comunities />
 
-      <div className="h-max">
-        <h2 className="text-xl font-black p-3">Mas acerca de la fraternidad</h2>
+      <div className="h-max p-3">
+        <Activities/>
+       
+       <Teams/>
+
       </div>
 
       <div className="h-max">
@@ -67,8 +71,6 @@ export const HomePage = () => {
       <div className="h-max">
         <h2 className="text-xl font-black p-3">¿Quieres ser parte?</h2>
       </div>
-
-
     </AppLayout>
   );
 };

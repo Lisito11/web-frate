@@ -61,7 +61,7 @@ export const Comunities = () => {
           <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
             <a href="#">
               <div className="relative flex items-end overflow-hidden rounded-xl">
-                <img src={`/images/communities/${img}`} alt="Hotel Photo" />
+                <img src={`/images/communities/${img}`} alt={name} />
               </div>
 
               <div className="mt-1 p-2">
