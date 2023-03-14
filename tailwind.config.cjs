@@ -12,6 +12,10 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif']
       },
 
+      fontSize: {
+        // sm: ['14px', '20px'],
+      },
+
       backgroundImage: {
         'main-mobile': "url('/images/background-mobile.webp')",
         'what-is-fml-mobile': "url('/images/what-is-fml.jpg')",

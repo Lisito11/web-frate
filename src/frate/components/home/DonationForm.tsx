@@ -21,7 +21,7 @@ export const DonationForm = () => {
 
 
       <div className="inline-flex items-center self-start">
-        <h2 className="font-black text-xl text-gray-900 p-3">
+        <h2 className="font-black text-xl text-gray-900 p-3 md:p-1  md:text-white">
           Donación para la FML
         </h2>
         <svg
@@ -38,7 +38,7 @@ export const DonationForm = () => {
         </svg>
       </div>
       <div className="flex flex-col justify-center">
-        <div className="p-4">
+        <div className="px-4 md:p-0">
           <form
             id="login_form"
             action="api_login"
@@ -181,7 +181,7 @@ export const DonationForm = () => {
           </form>
         </div>
 
-        <div className="flex flex-col justify-center items-center mt-2 gap-8">
+        <div className="md:hidden flex flex-col justify-center items-center mt-2 gap-8">
           <div className="flex flex-row gap-11">
            
             <div className="flex flex-col items-center">

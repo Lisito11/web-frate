@@ -25,21 +25,21 @@ export const NavBar = () => {
           <img src="/images/logo.png" alt="" className="h-16 sm:h-20" />
           </a>
           <a className="pt-3 px-3" href="#">
-            <span className="text-3xl sm:text-4xl font-bold font-sans text-blue-600">
+            <span className="lg:hidden text-3xl sm:text-4xl font-bold font-sans text-blue-600">
               F
             </span>
             <span className="hidden sm:inline font-bold font-sans text-blue-600 pr-2 lg:hidden">
               raternidad
             </span>
 
-            <span className="text-3xl sm:text-4xl font-bold font-sans text-red-600">
+            <span className="lg:hidden text-3xl sm:text-4xl font-bold font-sans text-red-600">
               M
             </span>
             <span className="hidden sm:inline font-bold font-sans text-red-600 pr-2 lg:hidden">
               isionera
             </span>
 
-            <span className="text-3xl sm:text-4xl font-bold font-sans text-green-600 ">
+            <span className="lg:hidden text-3xl sm:text-4xl font-bold font-sans text-green-600 ">
               L
             </span>
             <span className="hidden sm:inline font-bold font-sans text-green-600 lg:hidden">

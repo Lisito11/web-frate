@@ -22,15 +22,13 @@ export const ContactUs = () => {
               <input
                 type="email"
                 name="email"
-                id="email"
                 placeholder="Escribe tu correo"
-                className="w-full rounded border border-blue-300 bg-transparent px-3 py-2 text-blue-500 placeholder:text-blue-500 md:max-w-[18rem]"
+                className="w-full rounded border border-blue-300 bg-transparent px-3 py-2 text-blue-500 placeholder:text-blue-500 focus:outline-teal-500"
               />
               <textarea
                 name="message"
-                id="email"
                 placeholder="Déjanos un mensaje"
-                className="w-full rounded border border-blue-300 bg-transparent px-3 py-2 text-blue-500 placeholder:text-blue-500 md:max-w-[18rem]"
+                className="w-full rounded border border-blue-300 bg-transparent px-3 py-2 text-blue-500 placeholder:text-blue-500 focus:outline-teal-500"
               />
               <button type="submit" className="mt-4 w-full rounded bg-green-700 px-14 py-2 text-center text-white">Contáctanos</button>
 
